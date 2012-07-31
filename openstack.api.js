@@ -66,7 +66,7 @@ OSapi.prototype.call = function(params,callback){
 
 OSapi.prototype.RESTapi = function(api,self){ 
 	return { 
-		parsedUrl : _url.parse(self.apis[api].endpoints[0].admiURL),
+		parsedUrl : _url.parse(self.apis[api].endpoints[0].adminURL),
 		get: function(url,callback){ 
 			var s = this;
 			var obj = { url:s.parsedUrl.hostname , path:s.parsedUrl.pathname+url , method:'GET', port:s.parsedUrl.port }; 
