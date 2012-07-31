@@ -82,7 +82,7 @@ OSapi.prototype.RESTapi = function(api,self){
 			var obj = { url:s.parsedUrl.hostname , path:s.parsedUrl.pathname+url , method:'PUT', port:s.parsedUrl.port , data:data }; 
 			self.makeCall(obj,callback);
 		},
-		put: function(url,callback){ 
+		delete: function(url,callback){ 
 			var s = this;
 			var obj = { url:s.parsedUrl.hostname , path:s.parsedUrl.pathname+url , method:'DELETE', port:s.parsedUrl.port }; 
 			self.makeCall(obj,callback);
